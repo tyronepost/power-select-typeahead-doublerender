@@ -1,0 +1,11 @@
+{{#power-select-typeahead
+    placeholder='Enter a word'
+    renderInPlace=true
+    selected=selected
+    options=history
+    search=(action 'search')
+    onchange=(action 'selectValue')
+    onkeydown=(action "handleEnterKey")
+    as |historyItem| }}
+    {{historyItem}}
+{{/power-select-typeahead}}
